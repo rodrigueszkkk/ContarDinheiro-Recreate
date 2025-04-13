@@ -8,58 +8,90 @@
 </head>
 <body>
     <h1>Contador de Moedas!</h1>
-    <div>
-        <button>Moedas</button>
-        <button>Cédulas</button>
-        <button>Total</button>
+    <button>
+        <img src="src/Icons/menu3pontos.png" alt="">
+    </button>
+    <div class="Abas">
+        <button>
+            <p>Moedas</p>
+        </button>
+        <button>
+            <p>Cédulas</p>
+        </button>
+        <button>
+            <p>Total</p>
+        </button>
+        </div>
     </div>
-    <section class="moedas">
-        <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
-                <img src="src/moedas/1real.png" alt="Moeda de 1 Real">
-                <span>0</span>
-            </button>
+    <section class="Moedas">
+        <div class="linha">   
+            <div class="empilhados">   
+                <button class="btn base"><img src="src/Icons/mais.png" alt=""></button>
+                <button class="btn sobre"><img src="src/Icons/menos.png" alt=""></button>     
+            </div>
+            <div class="dinheiro">        
+                <button id="Real"> 
+                    <img src="src/moedas/1real.png" alt="Moeda de 1 Real">
+                    <span>0</span>
+                </button>
+            </div> 
         </div>
-        <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
-                <img src="src/moedas/50cents.png" alt="Moeda de 50 centavos">
-                <span>0</span>
-            </button>
+        <div class="linha">
+            <div class="empilhados">
+                <button><img src="src/Icons/mais.png" alt=""></button>
+                <button><img src="src/Icons/menos.png" alt=""></button>
+            </div>   
+            <div class="dinheiro">    
+                <button id="Real">
+                    <img src="src/moedas/50cents.png" alt="Moeda de 50 centavos">
+                    <span>0</span>
+                </button>
+            </div>     
         </div>
-        <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
-                <img src="src/moedas/25cents.png" alt="Moeda de 25 centavos">
-                <span>0</span>
-            </button>
+        <div class="linha">
+            <div class="empilhados">
+                <button><img src="src/Icons/mais.png" alt=""></button>
+                <button><img src="src/Icons/menos.png" alt=""></button>
+            </div>    
+            <div class="dinheiro">
+                <button id="Real">
+                    <img src="src/moedas/25cents.png" alt="Moeda de 25 centavos">
+                    <span>0</span>
+                </button>
+            </div>    
         </div>
-        <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
-                <img src="src/moedas/10cents.png" alt="Moeda de 10 centavos">
-                <span>0</span>
-            </button>
+        <div class="linha">
+            <div class="empilhados">
+                <button><img src="src/Icons/mais.png" alt=""></button>
+                <button><img src="src/Icons/menos.png" alt=""></button>
+            </div>        
+            <div class="dinheiro">
+                <button id="Real">
+                    <img src="src/moedas/10cents.png" alt="Moeda de 10 centavos">
+                    <span>0</span>
+                </button>
+            </div>    
         </div>
-        <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
-                <img src="src/moedas/5cents.png" alt="Moeda de 5 centavos">
-                <span>0</span>
-            </button>
+        <div class="linha">
+            <div class="empilhados">
+                <button><img src="src/Icons/mais.png" alt=""></button>
+                <button><img src="src/Icons/menos.png" alt=""></button>
+            </div>         
+            <div class="dinheiro">
+                <button id="Real">
+                    <img src="src/moedas/5cents.png" alt="Moeda de 5 centavos">
+                    <span>0</span>
+                </button>
+            </div>    
         </div>        
     </section>
-    <section class="cedulas">
+    <section class="Cedulas">
         <div>
-            <button><img src="src/Icons/mais.png" alt=""></button>
-            <button><img src="src/Icons/menos.png" alt=""></button>
-            <button>
+            <div>
+                <button><img src="src/Icons/mais.png" alt=""></button>
+                <button><img src="src/Icons/menos.png" alt=""></button>
+                <button>
+            </div>
                 <img src="src/Cedulas/100reais.png" alt="Cedula 100 Reais">
                 <span>0</span>
             </button>
@@ -105,12 +137,27 @@
             </button>
         </div>
     </section>
-    <section>
+    <section class="Total">
         <div>
-
+            <p>
+                Total em Moedas
+            </p>
+            <p>
+                R$<span>0</span>
+            </p>
+        </div>  
+        <div>
+            <p>
+                Total em Células
+            </p>
+            <p>
+                R$<span></span>
+            </p>
         </div>
         <div>
-            
+            <p>
+                Total Geral
+            </p>
         </div>
     </section>
 </body>

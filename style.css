@@ -28,17 +28,48 @@ h1{
     border-radius: 20% 20% 0 0;
 }   
 .Moedas .dinheiro img{
-    width: 19%;
+    width: 5%;
     height: auto;
 }
 .linha {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 10px 10px;
+    border-bottom: gray 1px solid;
     gap: 20px;
 }
-  
   .empilhados {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
+}
+.empilhados button{
+    border-radius: 100%;
+}
+.empilhados button img{
+    width: 50%;
+    height: auto;
+}
+.dinheiro{
+    width: 100%;
+    max-height: 80px;
+}
+.dinheiro button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+}
+.dinheiro button img {
+    width: 40px;
+    height: auto;
+}
+
+.dinheiro span{
+    color: white;
 }
